@@ -1,11 +1,12 @@
+import { Router } from '@reach/router';
 import React from 'react';
-import Counter from './components/Counter'
+import Counter from './pages/Counter'
 
 const App: React.FC = () => {
   return (
-    <>
-      <Counter/>
-    </>
+    <Router>
+      <Counter path='/count'/>
+    </Router>
   )
 }
 
